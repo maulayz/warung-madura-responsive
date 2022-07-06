@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Warung Madura</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Warung Madura</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-oy="scroll"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-lg-flex justify-content-lg-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#beranda"
+                >Beranda</a
+              >
+              <a class="nav-link" href="#tentang">Tentang Kami</a>
+              <a class="nav-link" href="#produk">Produk Kami</a>
+              <a class="nav-link" href="#lokasi-kontak">Kontak</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="konten">
+        <!-- beranda -->
+        <div id="beranda">
+          <div class="container">
+            <!-- hero -->
+            <div class="hero d-flex flex-column justify-content-center">
+              <h1 class="judul text-center text-shadow">
+                Selamat Datang di <span>Warung Madura</span>
+              </h1>
+              <p class="deskripsi text-center pt-3">
+                <i>"Sebuah warung yang berisikan makanan"</i>
+              </p>
+            </div>
+            <!-- end of hero -->
+          </div>
+        </div>
+        <!-- end of beranda -->
+
+        <!-- Tentang -->
+        <div id="tentang">
+          <div class="container">
+            <div class="tentang-kami d-flex flex-column justify-content-center pt-5">
+              <h1 class="judul-tentang text-center pb-5 pt-2 pt-lg-5">Tentang Kami</h1>
+              <p class="text-tentang text-center">
+                Warung Madura adalah sebuah usaha yang kami jalani dan terbentuk
+                atas dasar kecintaan terhadap daerah kami yaitu Madura. Warung
+                Madura ini menyediakan berbagai produk olahan Sate dan Sop,
+                yaitu Sate Ayam dan Sate Kambing serta Sop Sapi. Visi Misi dari
+                usaha yang kami bangun adalah:
+              </p>
+
+              <!-- visi-misi -->
+              <div class="visi-misi mt-5">
+                <div class="row">
+
+                  <!-- Visi -->
+                  <div class="col-lg">
+                    <h2 class="visi text-center">Visi</h2>
+                    <p class="visi-text text-center">
+                      <i
+                        >"Menyediakan menu yang lezat, halal, dan berkualitas
+                        tinggi serta dapat memenuhi kebutuhan perut konsumen
+                        yang mengeyangkan dan membuat suasana hati lebih
+                        baik."</i
+                      >
+                    </p>
+                  </div>
+                  <!-- end of Visi -->
+
+                  <!-- Misi -->
+                  <div class="col-lg">
+                    <h2 class="misi text-center">Misi</h2>
+                    <ul>
+                      <li>
+                        Memastikan perut konsumen atau pelanggan merasa puas
+                        dengan produk dan pelayanan dari Warung Madura
+                      </li>
+                      <li>
+                        Menghadirkan kegembiraan kepada pelanggan dalam bentuk
+                        makanan
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- end of Misi -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- end of Tentang -->
+
+        <!-- Produk -->
+        <div id="produk">
+          <div class="container">
+            <div class="produk-kami">
+              <h1 class="title text-center pb-3">Produk Kami</h1>
+              <!-- Sate Ayam -->
+              <div class="row mt-5">
+                <div class="col-lg d-flex justify-content-md-center">
+                  <img
+                    src="assets/sate1.jpg"
+                    alt="Sate Ayam"
+                    class="img-fluid img-produk mb-3"
+                    
+                  />
+                </div>
+                <div
+                  class="col-lg d-flex flex-column justify-content-center pt-3"
+                >
+                  <div class="deskripsi-produk">
+                    <h2 class="mb-3">Sate Ayam</h2>
+                    <p class="mb-4">
+                      Adalah makanan jenis sate yang terbuat dari bahan dasar
+                      daging ayam dan diolah dengan racikan bumbu yang khas dari
+                      Madura, Jawa Timur. Sate Ayam Madura merupakan salah satu
+                      makanan tradisional yang sangat terkenal di Indonesia.
+                    </p>
+                      <button class="buttons" onclick="sateAyam()">Sate Ayam</button>
+                  </div>
+                </div>
+              </div>
+              <!-- end of sate Ayam -->
+
+              <!-- Sate Kambing -->
+              <div class="row mt-5">
+                <div
+                  class="col-lg order-lg-last d-flex justify-content-md-center"
+                >
+                  <img
+                    src="assets/sate2.jpg"
+                    alt="Sate Kambing"
+                    class="img-fluid img-produk mb-3"
+                    
+                  />
+                </div>
+                <div
+                  class="col-lg d-flex flex-column justify-content-center pt-3"
+                >
+                  <div class="deskripsi-produk">
+                    <h2 class="mb-3">Sate Kambing</h2>
+                    <p class="mb-4">
+                      Adalah makanan jenis sate yang terbuat dari bahan dasar
+                      daging ayam dan diolah dengan racikan bumbu yang khas dari
+                      Madura, Jawa Timur. Sate Kambing Madura merupakan salah
+                      satu makanan tradisional yang sangat terkenal di
+                      Indonesia.
+                    </p>
+                    <button class="buttons" onclick="sateKambing()">Sate Kambing</button>
+                  </div>
+                </div>
+              </div>
+              <!-- end of sate kambing -->
+
+              <!-- Sop sapi -->
+              <div class="row mt-5 pb-5">
+                <div class="col-lg d-flex justify-content-md-center">
+                  <img
+                    src="assets/soup.jpg"
+                    alt="Sop Sapi"
+                    class="img-fluid img-produk mb-3"
+                    
+                  />
+                </div>
+                <div
+                  class="col-lg d-flex flex-column justify-content-center pt-3"
+                >
+                  <div class="deskripsi-produk">
+                    <h2 class="mb-3">Sop Sapi</h2>
+                    <p class="mb-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dicta sequi sint dignissimos minus dolores dolorem quam,
+                      saepe nesciunt unde natus maiores cum? Numquam dolorem
+                      fugit iusto odio debitis aut aliquam!
+                    </p>
+                    <button class="buttons" onclick="sopSapi()">Sop Sapi</button>
+                  </div>
+                </div>
+              </div>
+              <!-- end of sop sapi -->
+            </div>
+          </div>
+        </div>
+        <!-- end of produk -->
+      </div>
+    </main>
+    <!-- waktu-kontak -->
+    <section id="lokasi-kontak">
+      <div class="container">
+        <div class="buka d-flex flex-column justify-content-center">
+          <h1 class="text-center mb-5">Alamat & Kontak</h1>
+            <div class="row d-lg-flex align-items-lg-center">
+              <!-- maps -->
+              <div class="col-lg">
+                  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9938941876935!2d108.30370911414454!3d-6.891332669349522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f24c887494aeb%3A0x19db1425067baba1!2sTerminal%20Maja!5e0!3m2!1sid!2sid!4v1657086083992!5m2!1sid!2sid" width="100%" height="300" style="border-radius:40px 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <!-- end of maps -->
+
+              <!-- jam -->
+              <div class="col-lg">
+                <h4 class="text-center mb-3 mt-4">
+                  Jam Kerja Kami
+                </h4>
+                <div
+                  class="waktu-buka d-flex align-items-center gap-3 justify-content-center text-center"
+                >
+                  <div class="jam text-center">
+                    <i class="bi bi-clock" style="font-size: 2rem"></i>
+                    <p>15.00 - 22.00</p>
+                  </div>
+                  <div class="hari text-center">
+                    <i class="bi bi-calendar3" style="font-size: 2rem"></i>
+                    <p>buka setiap hari</p>
+                  </div>
+                  <div class="kontak text-center">
+                    <i
+                      class="bi bi-person-lines-fill"
+                      style="font-size: 2rem"
+                    ></i>
+                    <p>hubungi kami disini</p>
+                  </div>
+                </div>
+              </div>
+              <!-- end of jam -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of waktu-kontak -->
+
+    <!-- tunggu apalagi -->
+    <section id="accordion">
+      <div class="container">
+        <!-- accordion -->
+        <div class="accordion pt-5 pb-5">
+          <h1 class="mb-5">Tunggu Apalagi ?</h1>
+          <div class="isi-accordion">
+            <button class="pertama">
+              <p>Kenapa harus membeli produk kami ?</p>
+            </button>
+            <div class="isi">
+              Ketika perut anda merasa keroncongan atau sedang dalam fase laper
+              dan ingin makan makanan yang lumer serta olahan daging, pilihan
+              yang tepat yaitu produk kami. Karna dengan bumbu khas dari daerah
+              Madura membuat tekstur yang lumer di mulut serta daging yang di
+              bakar dengan areng pilihan.
+            </div>
+
+            <button class="kedua"><p>Apa kelebihan produk kami ?</p></button>
+            <div class="isi">
+              <ul>
+                <li>Yang pasti mengeyangkan</li>
+                <li>Di bakar dengan areng pilihan</li>
+                <li>Bumbu khas dari daerah Madura</li>
+                <li>Membuat hati senang</li>
+                <li>Serta memberikan kebahagiaan</li>
+              </ul>
+            </div>
+            <button class="ketiga"><p>Bagaimana cara memesan ?</p></button>
+            <div class="isi">
+              Klik tombol untuk pergi memesan ke via WhatsApp
+            </div>
+          </div>
+        </div>
+        <!-- end of accordion -->
+      </div>
+    </section>
+    <!-- end of tunggu apalagi -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="konten-footer text-center pt-5">
+          <h1 class="footer-title">Warung Madura</h1>
+          <p class="footer-text">
+            Kami adalah pengusaha yang terbentuk pada tahun 1990 dan bergerak di
+            bidang makanan yang memberikan citarasa khas dari daerah Madura.
+          </p>
+          <div class="icon mb-3">
+            <a href=""
+              ><i class="bi bi-instagram me-2" style="font-size: 2rem"></i
+            ></a>
+            <a href=""
+              ><i class="bi bi-twitter me-2" style="font-size: 2rem"></i
+            ></a>
+            <a href=""
+              ><i class="bi bi-github me-2" style="font-size: 2rem"></i
+            ></a>
+            <a href=""
+              ><i class="bi bi-facebook me-2" style="font-size: 2rem"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <marquee>Code With ❤</marquee>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

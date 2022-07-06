@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&family=Rubik+Moonrocks&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #014942;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-brand {
+    letter-spacing: 3px;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+.navbar-brand:hover {
+    animation: skew 1s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+}
+@keyframes skew {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+a.nav-link {
+    color: white;
+}
+a.nav-link:hover {
+    color: aqua;
+    transition: 0.5s;
+}
+
+#konten {
+    background-color: #009688;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2;
+}
+h1 {
+    text-shadow: 3px 5px 5px #000000;
+}
+.hero {
+    height: 100vh;
+}
+.judul {
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+.judul span {
+    color: aqua;
+}
+
+.produk-kami {
+    padding-top: 7rem;
+}
+.img-produk {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 40px 20px;
+}
+
+.buttons {
+    background-color: #014942;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+.buttons:hover {
+    background-color: aqua;
+    color: black;
+    transition: 0.5s;
+}
+
+.buka {
+    height: 100vh;
+}
+
+#lokasi-kontak {
+    background-color: #009688;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2;
+}
+
+#accordion {
+    background-color: #009688;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2;
+}
+.accordion h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 10px 10px #000000;
+}
+.isi-accordion {
+    border: 1px solid white;
+}
+.pertama {
+    cursor: pointer;
+    padding: 5px 0 0 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 1s;
+    color: white;
+    background-color: #009688;
+    border-bottom: 1px solid white;
+}
+.kedua {
+    cursor: pointer;
+    padding: 5px 0 0 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 1s;
+    color: white;
+    background-color: #009688;
+    border-bottom: 1px solid white;
+}
+.ketiga {
+    cursor: pointer;
+    padding: 5px 0 0 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 1s;
+    color: white;
+    background-color: #009688;
+}
+.active {
+    background-color: rgba(51, 51, 51, 0.08);
+    color: yellow;
+    border: none;
+}
+.isi {
+    padding: 0 18px;
+    background-color: rgba(51, 51, 51, 0.08);
+    color: white;
+    display: none;
+    overflow: hidden;
+    border-bottom: 1px solid white;
+}
+.isi ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+#footer {
+    background-color: #01665c;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2;
+}
+.footer-title {
+    letter-spacing: 3px;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+.footer-title {
+    animation: wow 1.5s infinite;
+    transform: wow(20deg);
+    animation-direction: alternate;
+}
+@keyframes wow {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+
+
+.konten-footer a {
+    color: inherit;
+    text-decoration: none;
+}
+.konten-footer a:hover {
+    color: aqua;
+    transition: 0.5s;
+}
+
+footer .container-fluid {
+    background-color: #014942;
+}
+footer .container-fluid marquee {
+    padding-top: 5px;
+}
